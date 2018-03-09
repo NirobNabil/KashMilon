@@ -4,8 +4,10 @@
 	<title>Products</title>
 	<link href="../stylesheets/topbar.css" rel="stylesheet">
 	<link href="../stylesheets/products.css" rel="stylesheet">
+	<link href="../stylesheets/sidebar.css" rel="stylesheet">
 	<script src="../scripts/jquery-3.1.1.js"></script>
 	<script src="../scripts/products.js"></script>
+	<script src="../scripts/dropdown.js"></script>
 </head>
 
 <body>
@@ -13,26 +15,125 @@
 	<div class="navbar">
 		<div class="hamburger">
 			<div id="menu-toggle">
-			  <div id="hamburger">
-				<span></span>
-				<span></span>
-				<span></span>
-			  </div>
-			  <div id="cross">
-				<span></span>
-				<span></span>
-			  </div>
+				<div id="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div id="cross">
+					<span></span>
+					<span></span>
+				</div>
 			</div>
 		</div>
 		<div class="title">KashMilon</div>
 		<div class="navButtons">
-			<a href="#"><div class="Home navButton"><span>Home</span><span class="navUnderline"></span></div></a>
-			<a href="#"><div class="Products navButton"><span>Products</span><span class="navUnderline"></span></div></a>
-			<a href="#"><div class="About navButton"><span>About</span><span class="navUnderline"></span></div></a>
+			<a href="#">
+				<div class="Home navButton"><span>Home</span><span class="navUnderline"></span></div>
+			</a>
+			<a href="#">
+				<div class="Products navButton"><span>Products</span><span class="navUnderline"></span></div>
+			</a>
+			<a href="#">
+				<div class="About navButton"><span>About</span><span class="navUnderline"></span></div>
+			</a>
 			<span></span>
 		</div>
 	</div>
 
 
+	<div class="universalMother">
+		<div class="sidebarContainer">
+		<div class="filters">
+			<div class="filter">
+				<label class="filterLabel"> Color: </label>
+				<dl class="dropdown">
+					<dt>
+						<a href="#">
+						  <span class="hida">Select</span>
+						  <p class="multiSel"></p>
+						</a>
+					</dt>
+
+					<dd>
+						<div class="mutliSelect">
+							<ul>
+								<li>
+									<input type="checkbox" value="Green" />Green</li>
+								<li>
+									<input type="checkbox" value="Blue" />Blue</li>
+								<li>
+									<input type="checkbox" value="Red" />Red</li>
+								<li>
+									<input type="checkbox" value="Yellow" />Yellow</li>
+								<li>
+									<input type="checkbox" value="Aliceblue" />Aliceblue</li>
+								<li>
+									<input type="checkbox" value="Black" />Black</li>
+							</ul>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="filter">
+				<label class="filterLabel"> Gender: </label>
+				<dl class="dropdown">
+				<dt>
+					<a href="#">
+					  <span class="hida">Select</span>
+					  <p class="multiSel"></p>
+					</a>
+				</dt>
+
+					<dd>
+						<div class="mutliSelect">
+							<ul>
+								<li>
+									<input type="checkbox" value="Green" />Male</li>
+								<li>
+									<input type="checkbox" value="Blue" />Female</li>
+								<li>
+									<input type="checkbox" value="Baby(boy)" />Baby(boy)</li>
+								<li>
+									<input type="checkbox" value="Baby(girl)" />Baby(girl)</li>
+							</ul>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="filter">
+				<label class="filterLabel"> Collar: </label>
+				<dl class="dropdown">
+				<dt>
+					<a href="#">
+					  <span class="hida">Select</span>
+					  <p class="multiSel"></p>
+					</a>
+				</dt>
+
+					<dd>
+						<div class="mutliSelect">
+							<ul>
+								<li>
+									<input type="checkbox" value="Green" />lorem</li>
+								<li>
+							</ul>
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		</div>
+
+		<div class="mainContentContainer">
+
+		</div>
+	</div>
+
+
+
+
+
 </body>
+
 </html>

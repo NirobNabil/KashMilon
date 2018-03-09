@@ -1,7 +1,3 @@
-body {
-	position: relative;
-	margin: 0;
-}
 
 .sidebarContainer {
 	padding-top: 10%;
@@ -34,11 +30,6 @@ body {
 	position: relative;
 	/transform: translateY(-50%);
 }
-
-a {
-	color: #fff;
-}
-
 .dropdown dd,
 .dropdown dt {
 	margin: 0px;

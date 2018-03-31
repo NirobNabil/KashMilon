@@ -1,0 +1,10 @@
+body {
+	position: relative;
+	margin: 0;
+	height: 100%;
+}
+.universalMother{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}

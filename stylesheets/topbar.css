@@ -1,0 +1,162 @@
+a{
+	text-decoration: inherit;
+	color: inherit;
+}
+
+
+/****************************        Hamburg button part       ***********************************/
+.navbar, .navbar *{
+  transition: .1s ease-in-out;
+  box-sizing: border-box;
+}
+
+.hamburger span {
+  display: block;
+  background: #566973;
+  border-radius: 2px;
+}
+
+#menu-toggle {
+  width: 100px;
+  height: 100px;
+  margin-top: .5em;
+  margin-left: 1em;
+  position: relative;
+  position: relative;
+  cursor: pointer;
+  /background: rgba(255, 255, 255, 0.4);
+  /background: inherit;
+  border-radius: 5px;
+}
+#menu-toggle:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+#menu-toggle #hamburger {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#menu-toggle #hamburger span {
+  width: 60px;
+  height: 4px;
+  position: relative;
+  top: 24px;
+  left: 20px;
+  margin: 10px 0;
+}
+#menu-toggle #hamburger span:nth-child(1) {
+  transition-delay: .5s;
+}
+#menu-toggle #hamburger span:nth-child(2) {
+  transition-delay: .625s;
+}
+#menu-toggle #hamburger span:nth-child(3) {
+  transition-delay: .75s;
+}
+#menu-toggle #cross {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: rotate(45deg);
+}
+#menu-toggle #cross span:nth-child(1) {
+  height: 0%;
+  width: 4px;
+  position: absolute;
+  top: 10%;
+  left: 48px;
+  transition-delay: 0s;
+}
+#menu-toggle #cross span:nth-child(2) {
+  width: 0%;
+  height: 4px;
+  position: absolute;
+  left: 10%;
+  top: 48px;
+  transition-delay: .25s;
+}
+
+#menu-toggle.open #hamburger span {
+  width: 0%;
+}
+#menu-toggle.open #hamburger span:nth-child(1) {
+  transition-delay: 0s;
+}
+#menu-toggle.open #hamburger span:nth-child(2) {
+  transition-delay: .125s;
+}
+#menu-toggle.open #hamburger span:nth-child(3) {
+  transition-delay: .25s;
+}
+#menu-toggle.open #cross span:nth-child(1) {
+  height: 80%;
+  transition-delay: .625s;
+}
+#menu-toggle.open #cross span:nth-child(2) {
+  width: 80%;
+  transition-delay: .375s;
+}
+
+
+
+/*******************************     Hamburger end      *****************************/
+
+@font-face{
+	font-family: 'titleFont';
+	src: url('../static_files/fonts/RammettoOne-Regular.ttf')
+}
+@font-face{
+	font-family: 'navButtonFont';
+	src: url('../static_files/fonts/Kreon-Regular.ttf')
+}
+
+.navbar{
+	z-index: 2;
+	width: 100%;
+	background: rgba(240,240,240,1);
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	/overflow: hidden;
+	top: 0;
+	left: 0;
+	height: 7.3em;
+}
+
+.title{
+	display: block;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	padding-left: .5em;
+	font-size: 3em;
+	font-family: titleFont;
+}
+
+.navButtons{
+	/border: 1px solid black;
+	top: .4em;
+	display: flex;
+	margin-right: 7%;
+	justify-content: flex-end;
+	flex-grow: 1;
+	position: relative;
+	right: 0em;
+}
+
+.navButton{
+/*	cursor: pointer;*/
+	display: flex;
+	flex-direction: column;
+	font-family: navButtonFont;
+	font-size: 1.7em;
+	padding-top: 1.3em;
+	padding-right: 1.7em;
+	padding-left: 1.7em;
+}
+
+.navUnderline{
+	align-self: center;
+	width: 100%;
+	background: black;
+	height: .1em;
+}

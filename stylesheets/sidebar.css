@@ -1,13 +1,12 @@
-
 .sidebarContainer {
-	padding-top: 10%;
-	width: 20%;
+	position: absolute;
+	width: 16%;
 	height: 100%;
 	left: 0;
 	position: relative;
 	background: rgb(217, 217, 217);
+	overflow: hidden;
 }
-
 
 
 /********************************  dropdown menu part **************************************************/
@@ -17,6 +16,7 @@
 	font-size: 1.2em;
 }
 .filters{
+	padding-top: 10em;
 	flex-direction: column;
 	display: flex;
 	justify-content: center;
@@ -30,6 +30,11 @@
 	position: relative;
 	/transform: translateY(-50%);
 }
+
+.dropdown a {
+	color: #fff;
+}
+
 .dropdown dd,
 .dropdown dt {
 	margin: 0px;
@@ -115,7 +120,20 @@
 .dropdown dd ul li a:hover {
 	background-color: #fff;
 }
-
+.filterButton{
+	border: 1px solid rgba(0,0,0,.3);
+	background: rgba(0,0,0,.1);
+	border-radius: .3em;
+	margin: 1em;
+	padding: .5em 0em;
+	align-self: center;
+	width: 10em;
+	cursor: pointer;
+	transition: .2s;
+}
+.filterButton:hover{
+	background: rgba(0,0,0,.3);
+}
 
 
 /********************  dropdown part ************************/

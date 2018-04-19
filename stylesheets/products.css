@@ -8,3 +8,58 @@ body {
 	display: flex;
 	flex-direction: row;
 }
+.mainContentContainer{
+	left: 16em;
+	display: flex;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	justify-content: center;
+	top: 7.3em;
+	width: 85%;
+	/height: 80%;
+	background: white;
+	position: relative;
+}
+.productContainer{
+	display: flex;
+	flex-direction: column;
+	margin: 1em;
+	margin-top: 2em;
+	margin-bottom: 0em;
+	position: relative;
+	height: 25em;
+	width: 19em;
+	background: rgba(0,0,0,.2);
+	/border: 2px solid black;
+	box-shadow: 1px 1px 10px 5px rgba(0,0,0,.1) inset;
+}
+.product_pic{
+	align-self: center;
+	height: 60%;
+	margin-top: 2em;
+}
+.productName{
+	text-align: center;
+	font-family: sans-serif;
+}
+.productDetails{
+	align-self: center;
+	font-family: sans-serif;
+	font-size: 1.2em;
+}
+.productDetails span{
+	padding: .5em;
+	box-shadow: 0px 0px 10px .1px rgba(0,0,0,.3) inset;
+}
+.productDetails .type{
+	/color: #f44336;
+}
+.productDetails .color{
+	/color: #1a237e;
+}
+.productDetails .material{
+	/color: aliceblue;
+}
+.productDetails .type{
+	/color: red;
+}

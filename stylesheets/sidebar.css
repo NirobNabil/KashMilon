@@ -1,11 +1,12 @@
 .sidebarContainer {
-	position: absolute;
-	width: 16%;
-	height: 100%;
+	position: fixed;
+	width: 16em;
+	height: 100em;
 	left: 0;
-	position: relative;
+	z-index: 1;
+	/position: relative;
 	background: rgb(217, 217, 217);
-	overflow: hidden;
+	/overflow: hidden;
 }
 
 

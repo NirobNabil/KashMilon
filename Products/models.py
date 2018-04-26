@@ -8,12 +8,24 @@ class product(models.Model):
         ('baby', 'baby'),
     )
     collarChoice = (
-        ('round','round'),
+        ('round', 'round'),
+        ('enter collar name here', 'enter the same collar name here'),
+        ('enter another collar name here', 'enter the same collar name here'),
+        ('...', '...'),
+        ('...', '...'),
+        ('...', '...'),
+
     )
     materialChoice = (
-        ('cotton','cotton'),
+        ('cotton', 'cotton'),
+        ('enter material name here', 'enter the same material name here'),
+        ('enter another material name here', 'enter the same material name here'),
+        ('...', '...'),
+        ('...', '...'),
+        ('...', '...'),
     )
-    Code = models.CharField(max_length=30)
+
+    code = models.CharField(max_length=30)
     img = models.ImageField(upload_to='productImages')
     type = models.CharField(max_length=10,
                             choices=typeChoice,
